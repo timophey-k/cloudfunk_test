@@ -17,7 +17,7 @@ on:
 
 env:
   FOLDER_ID: b1go2mpo9hhnjf4vugka
-  SA_ID: ci-cd-github-federation
+  SA_ID: ajeqg81co97pft4qbssn
   FUNCTION_NAME: from-github-production
   FUNCTION_RUNTIME: nodejs22
   FUNCTION_ENTRYPOINT: index.handler
