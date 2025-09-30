@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 env:
-  FOLDER_ID: default
+  FOLDER_ID: b1go2mpo9hhnjf4vugka
   SA_ID: ci-cd-github-sa
   FUNCTION_NAME: from-github-production
   FUNCTION_RUNTIME: nodejs22
