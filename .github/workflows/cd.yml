@@ -20,6 +20,8 @@ env:
   SA_ID: ajeqg81co97pft4qbssn
   FUNCTION_NAME: from-github-production
   FUNCTION_RUNTIME: nodejs22
+  FUNCTION_ENTRYPOINT: index.handler
+  FUNCTION_MEMORY: "128mb"
   FUNCTION_SOURCEROOT: .
   
 jobs:
@@ -36,6 +38,8 @@ jobs:
           folder-id: ${{env.FOLDER_ID}}
           function-name: ${{env.FUNCTION_NAME}}
           runtime: ${{env.FUNCTION_RUNTIME}}
+          entrypoint: ${{env.FUNCTION_ENTRYPOINT}}
+          memory: ${{env.FUNCTION_MEMORY}}
           source-root: ${{env.FUNCTION_SOURCEROOT}}
           include: |
             **/*.json
