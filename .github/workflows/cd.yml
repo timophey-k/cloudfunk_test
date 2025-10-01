@@ -19,6 +19,7 @@ env:
   FOLDER_ID: b1go2mpo9hhnjf4vugka
   SA_ID: ajeqg81co97pft4qbssn
   FUNCTION_NAME: from-github-production
+  FUNCTION_RUNTIME: nodejs22
   FUNCTION_SOURCEROOT: .
   
 jobs:
@@ -34,6 +35,7 @@ jobs:
           yc-sa-id: ${{env.SA_ID}}
           folder-id: ${{env.FOLDER_ID}}
           function-name: ${{env.FUNCTION_NAME}}
+          runtime: ${{env.FUNCTION_RUNTIME}}
           source-root: ${{env.FUNCTION_SOURCEROOT}}
           include: |
             **/*.json
